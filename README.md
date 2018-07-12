@@ -53,3 +53,21 @@ environments/            contains environment-based overrides
 tests                    contains various tests for the advanced application
     codeception/         contains tests developed with Codeception PHP Testing Framework
 ```
+
+1. clone
+2. PHP init
+3. composer install
+4. comon\config\main-local =  ubah data base jadi nama database kosong kamu
+5. common\config\main = tambahkan
+
+	'aliases' => [
+        '@bower' => '@vendor/bower-asset',
+        '@npm' => '@vendor/npm-asset',
+    	],
+
+6. common\config\main = modules & as access // komen dudul
+7. yii migrate
+8. yii migrate --migrattionPath=@yii/rbac/migrations
+9. yii migrate --migrattionPath=@ymdm/upload/migrations
+10. yii rbac/init
+
